@@ -1,4 +1,4 @@
 FROM openjdk:17
 EXPOSE 8081
-ADD target/spring-boot-app.jar inventory-service-app.jar
-ENTRYPOINT ["java","-jar","/inventory-service-app.jar"]
+ADD target/inventoryService.jar inventoryService.jar
+ENTRYPOINT ["java","-jar","/inventoryService.jar"]
